@@ -206,5 +206,94 @@
                 }
             }
         ]
+    },
+    "0da529dd-9e44-ddbe-3fce-7f1a3a55c54b": {
+        "Name": "UI_PEACOCK_GAMECHANGERS_DARTMOOR_NO_MANSIONSTAFF_OUTFIT_NAME",
+        "Description": "UI_PEACOCK_GAMECHANGERS_DARTMOOR_NO_MANSIONSTAFF_OUTFIT_DESC",
+        "TileImage": "images/contracts/gamechangers/gamechanger_dartmoor_nomansionstaffoutfit.jpg",
+        "Icon": "images/challenges/default_challenge_icon.png",
+        "ObjectivesCategory": "primary",
+        "IsHidden": null,
+        "Resource": [],
+        "Objectives": [
+            {
+                "Id": "a382704d-0814-4853-ad4d-dd3acc864b50",
+                "Category": "primary",
+                "BriefingText": "$loc UI_PEACOCK_GAMECHANGERS_DARTMOOR_NO_MANSIONSTAFF_OUTFIT_NAME",
+                "HUDTemplate": {
+                    "display": "$loc UI_PEACOCK_GAMECHANGERS_DARTMOOR_NO_MANSIONSTAFF_OUTFIT_HUD",
+                    "iconType": 17
+                },
+                "Type": "statemachine",
+                "Definition": {
+                    "Scope": "session",
+                    "States": {
+                        "Start": {
+                            "-": {
+                                "Transition": "Success"
+                            }
+                        },
+                        "Success": {
+                            "Disguise": {
+                                "Condition": {
+                                    "$eq": [
+                                        "$Value",
+                                        "4115e440-fdf8-44d2-a3ba-a1bb2285e542"
+                                    ]
+                                },
+                                "Transition": "Failure"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "f9735eb6-8355-1397-3c57-c7cb04445327": {
+        "Name": "UI_PEACOCK_GAMECHANGERS_DARTMOOR_TIMELIMITEDSUIT_NAME",
+        "Description": "UI_PEACOCK_GAMECHANGERS_DARTMOOR_TIMELIMITEDSUIT_DESC",
+        "TileImage": "images/contracts/gamechangers/gamechanger_dartmoor_timelimitedsuit.jpg",
+        "Icon": "images/challenges/default_challenge_icon.png",
+        "ObjectivesCategory": "primary",
+        "IsHidden": null,
+        "Resource": [],
+        "Objectives": [
+            {
+                "Id": "6184199f-624b-b587-d5eb-4ac9b48b23f1",
+                "Category": "primary",
+                "BriefingText": "$loc UI_PEACOCK_GAMECHANGERS_DARTMOOR_TIMELIMITEDSUIT_NAME",
+                "HUDTemplate": {
+                    "display": "$loc UI_PEACOCK_GAMECHANGERS_DARTMOOR_TIMELIMITEDSUIT_HUD",
+                    "iconType": 17
+                },
+                "Type": "statemachine",
+                "Definition": {
+                    "Scope": "session",
+                    "States": {
+                        "Start": {
+                            "ContractStart": [
+                                {
+                                    "Condition": {
+                                        "$eq": ["$Value.IsHitmanSuit", true]
+                                    },
+                                    "Transition": "Success"
+                                },
+                                {
+                                    "Transition": "NotInSuit"
+                                }
+                            ]
+                        },
+                        "NotInSuit": {
+                            "$timer": {
+                                "Condition": { "$after": 300 },
+                                "Transition": "Failure"
+                            },
+                            "exit_gate": { "Transition": "Success" }
+                        },
+                        "Success": { "Disguise": { "Transition": "NotInSuit" } }
+                    }
+                }
+            }
+        ]
     }
 }

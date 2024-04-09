@@ -1,0 +1,385 @@
+{
+    "Data": {
+        "Entrances": [
+            "0aec817c-738e-4381-bbd4-a13b5d1c6730",
+            "d4ec0c94-02b2-4aae-be9e-cbb5cc7d7e4a",
+            "5314c86b-7173-412b-a0b5-b0d9af2da722",
+            "3812ea57-e29c-42cb-b93a-ea2d3e6a6806",
+            "0809cabd-20f1-4fd4-b4fc-9cdc86bdf7cf"
+        ],
+        "Objectives": [
+            {
+                "_comment": "----- photographer -----",
+                "Type": "statemachine",
+                "Id": "f298dbdf-733f-4467-a384-39d2feb8a34b",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 3c125feb-13af-4fd2-9f85-f6c411c0162b).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 3c125feb-13af-4fd2-9f85-f6c411c0162b).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": ["3c125feb-13af-4fd2-9f85-f6c411c0162b"]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$and": [
+                                            {
+                                                "$eq": [
+                                                    "$Value.RepositoryId",
+                                                    "3c125feb-13af-4fd2-9f85-f6c411c0162b"
+                                                ]
+                                            },
+                                            {
+                                                "$eq": [
+                                                    "$Value.KillMethodStrict",
+                                                    "consumed_poison"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                },
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "3c125feb-13af-4fd2-9f85-f6c411c0162b"
+                                        ]
+                                    },
+                                    "Transition": "Failure"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "TargetConditions": [
+                    {
+                        "Type": "killmethod",
+                        "RepositoryId": "",
+                        "HardCondition": true,
+                        "KillMethod": "consumed_poison"
+                    }
+                ]
+            },
+            {
+                "_comment": "----- undertaker -----",
+                "Type": "statemachine",
+                "Id": "1370bc1b-61bd-416e-8cec-23bfae4bfe63",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 0f88cdaa-d784-4951-8696-ea3065cc6228).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 0f88cdaa-d784-4951-8696-ea3065cc6228).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": ["0f88cdaa-d784-4951-8696-ea3065cc6228"]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$and": [
+                                            {
+                                                "$eq": [
+                                                    "$Value.RepositoryId",
+                                                    "0f88cdaa-d784-4951-8696-ea3065cc6228"
+                                                ]
+                                            },
+                                            {
+                                                "$eq": [
+                                                    "$Value.KillMethodStrict",
+                                                    "consumed_poison"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                },
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "0f88cdaa-d784-4951-8696-ea3065cc6228"
+                                        ]
+                                    },
+                                    "Transition": "Failure"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "TargetConditions": [
+                    {
+                        "Type": "killmethod",
+                        "RepositoryId": "",
+                        "HardCondition": true,
+                        "KillMethod": "consumed_poison"
+                    }
+                ]
+            },
+            {
+                "_comment": "----- detective -----",
+                "Type": "statemachine",
+                "Id": "510d0851-410e-5b47-a2c6-5317498a4288",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 5403294c-5390-46ba-a246-4bb6108253c0).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 5403294c-5390-46ba-a246-4bb6108253c0).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": ["5403294c-5390-46ba-a246-4bb6108253c0"]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$and": [
+                                            {
+                                                "$eq": [
+                                                    "$Value.RepositoryId",
+                                                    "5403294c-5390-46ba-a246-4bb6108253c0"
+                                                ]
+                                            },
+                                            {
+                                                "$eq": [
+                                                    "$Value.KillMethodStrict",
+                                                    "consumed_poison"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                },
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "5403294c-5390-46ba-a246-4bb6108253c0"
+                                        ]
+                                    },
+                                    "Transition": "Failure"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "TargetConditions": [
+                    {
+                        "Type": "killmethod",
+                        "RepositoryId": "",
+                        "HardCondition": true,
+                        "KillMethod": "consumed_poison"
+                    }
+                ]
+            },
+            {
+                "_comment": "----- edward -----",
+                "Type": "statemachine",
+                "Id": "ad44cc9f-0a57-0abd-8bb7-a5e005258adb",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 0fee1154-c66b-41e1-b504-897374cfdaff).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 0fee1154-c66b-41e1-b504-897374cfdaff).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": ["0fee1154-c66b-41e1-b504-897374cfdaff"]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$and": [
+                                            {
+                                                "$eq": [
+                                                    "$Value.RepositoryId",
+                                                    "0fee1154-c66b-41e1-b504-897374cfdaff"
+                                                ]
+                                            },
+                                            {
+                                                "$eq": [
+                                                    "$Value.KillMethodStrict",
+                                                    "consumed_poison"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                },
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "0fee1154-c66b-41e1-b504-897374cfdaff"
+                                        ]
+                                    },
+                                    "Transition": "Failure"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "TargetConditions": [
+                    {
+                        "Type": "killmethod",
+                        "RepositoryId": "",
+                        "HardCondition": true,
+                        "KillMethod": "consumed_poison"
+                    }
+                ]
+            },
+            {
+                "_comment": "----- rebecca -----",
+                "Type": "statemachine",
+                "Id": "c2848701-2868-0a3b-978f-99fe71ffae55",
+                "Image": "images/actors/actor_a3216d97-4d73-400f-acce-cb30b02f6468_0_0_0.jpg",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 3ee70c86-8407-44bd-9927-3002d265a3a2).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 3ee70c86-8407-44bd-9927-3002d265a3a2).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": ["3ee70c86-8407-44bd-9927-3002d265a3a2"]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$and": [
+                                            {
+                                                "$eq": [
+                                                    "$Value.RepositoryId",
+                                                    "3ee70c86-8407-44bd-9927-3002d265a3a2"
+                                                ]
+                                            },
+                                            {
+                                                "$eq": [
+                                                    "$Value.KillMethodStrict",
+                                                    "consumed_poison"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                },
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "3ee70c86-8407-44bd-9927-3002d265a3a2"
+                                        ]
+                                    },
+                                    "Transition": "Failure"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "TargetConditions": [
+                    {
+                        "Type": "killmethod",
+                        "RepositoryId": "",
+                        "HardCondition": true,
+                        "KillMethod": "consumed_poison"
+                    }
+                ]
+            }
+        ],
+        "GameChangers": [
+            "0da529dd-9e44-ddbe-3fce-7f1a3a55c54b",
+            "f9735eb6-8355-1397-3c57-c7cb04445327"
+        ],
+        "Bricks": []
+    },
+    "Metadata": {
+        "Title": "UI_PEACOCK_MANDALA3",
+        "Description": "",
+        "Entitlements": ["LOCATION_ANCESTRAL"],
+        "ScenePath": "assembly:/_pro/scenes/missions/Ancestral/scene_bulldog.entity",
+        "Location": "LOCATION_ANCESTRAL_BULLDOG",
+        "IsPublished": true,
+        "CreatorUserId": "fadb923c-e6bb-4283-a537-eb4d1150262e",
+        "GameVersion": "8.14.0.0",
+        "ServerVersion": "8.14.0.0",
+        "Type": "escalation",
+        "Id": "844f6a35-a267-2362-c2a2-af07a819f79f",
+        "TileImage": "$($repository 3c125feb-13af-4fd2-9f85-f6c411c0162b).Image",
+        "GroupObjectiveDisplayOrder": [
+            { "Id": "f9735eb6-8355-1397-3c57-c7cb04445327", "IsNew": true },
+            { "Id": "510d0851-410e-5b47-a2c6-5317498a4288" },
+            { "Id": "ad44cc9f-0a57-0abd-8bb7-a5e005258adb" },
+            { "Id": "c2848701-2868-0a3b-978f-99fe71ffae55" },
+            { "Id": "0da529dd-9e44-ddbe-3fce-7f1a3a55c54b" },
+            { "Id": "f298dbdf-733f-4467-a384-39d2feb8a34b" },
+            { "Id": "1370bc1b-61bd-416e-8cec-23bfae4bfe63" }
+        ],
+        "CreationTimestamp": "2024-04-07T06:29:53.070Z",
+        "InGroup": "b554269e-788e-4de6-b959-f22b4166679f"
+    },
+    "UserData": {}
+}

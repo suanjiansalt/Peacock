@@ -1,0 +1,38 @@
+{
+    "Data": {
+        "EnableSaving": false,
+        "Objectives": [],
+        "Bricks": [],
+        "GameChangers": [],
+        "GameChangerReferences": [],
+        "Stashpoints": []
+    },
+    "Metadata": {
+        "Title": "UI_PEACOCK_MANDALA",
+        "Description": "UI_PEACOCK_ESCALATION_DARTMOOR_DESC",
+        "Entitlements": ["LOCATION_ANCESTRAL"],
+        "ScenePath": "assembly:/_pro/scenes/missions/Ancestral/scene_bulldog.entity",
+        "Location": "LOCATION_ANCESTRAL_BULLDOG",
+        "CodeName_Hint": "Mandala Group",
+        "IsPublished": true,
+        "CreatorUserId": "fadb923c-e6bb-4283-a537-eb4d1150262e",
+        "GameVersion": "8.14.0.0",
+        "ServerVersion": "8.14.0.0",
+        "Type": "escalation",
+        "Id": "b554269e-788e-4de6-b959-f22b4166679f",
+        "PublicId": "148856879864",
+        "TileImage": "images/contracts/escalation/contractescalation_mandala.jpg",
+        "GroupDefinition": {
+            "Type": "escalation",
+            "Order": [
+                "b0a63857-b597-4a87-6959-8a917436e9b3",
+                "03a0c7e1-51a9-ac59-7fd1-15d43c26f44d",
+                "844f6a35-a267-2362-c2a2-af07a819f79f"
+            ]
+        },
+        "CreationTimestamp": "2024-04-07T06:29:53.070Z",
+        "Season": 0,
+        "OriginalSeason": 3
+    },
+    "UserData": {}
+}

@@ -614,6 +614,12 @@
     ],
     "Dartmoor": [
         {
+            "codename": "Mandala",
+            "name": "🦚 The Vlad Venom",
+            "id": "b554269e-788e-4de6-b959-f22b4166679f",
+            "isPeacock": true
+        },
+        {
             "codename": "Rose Bush",
             "name": "🦚 The dez Dichotomy",
             "id": "78628e05-93ce-4f87-8a17-b910d32df51f",
