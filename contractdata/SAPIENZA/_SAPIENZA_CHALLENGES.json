@@ -12240,6 +12240,428 @@
                     "Tags": ["cheesecake-pack", "story", "live", "medium"]
                 }
             ]
+        },
+        {
+            "Name": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_PACK_VITAMIN",
+            "Image": "images/challenges/categories/packvitamin/tile.jpg",
+            "Icon": "challenge_category_feats",
+            "CategoryId": "vitamin-pack",
+            "Description": "",
+            "OrderIndex": 6.993,
+            "Challenges": [
+                {
+                    "Id": "a97b03fe-6eed-416b-8f37-c08a770ae11e",
+                    "Name": "UI_PEACOCK_CHALLENGEPACK_VITAMIN_WRAPPER_NAME",
+                    "ImageName": "images/challenges/Categories/PackVitamin/Vitamin_Wrapper.jpg",
+                    "Description": "UI_PEACOCK_CHALLENGEPACK_VITAMIN_WRAPPER_DESC",
+                    "Rewards": {
+                        "MasteryXP": 4000
+                    },
+                    "Drops": ["PROP_MELEE_BASEBALLBAT_PURPLE"],
+                    "IsPlayable": false,
+                    "IsLocked": false,
+                    "HideProgression": false,
+                    "CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_PACK_VITAMIN",
+                    "Icon": "challenge_category_feats",
+                    "LocationId": "",
+                    "ParentLocationId": "",
+                    "Type": "global",
+                    "DifficultyLevels": [],
+                    "OrderIndex": 1,
+                    "XpModifier": {},
+                    "RuntimeType": "Hit",
+                    "Definition": {
+                        "Scope": "profile",
+                        "Constants": {
+                            "RequiredChallenges": [
+                                "18ea5968-9b73-4f00-82fa-fb818f8fd4cc",
+                                "fc704e7b-aaa5-4449-8966-eff24cb44716",
+                                "bf37fe2b-8eb1-4f96-ae53-3ba048b5b4f3",
+                                "9cd14aa7-17e1-47b5-be5c-9fef35ee49a2"
+                            ]
+                        },
+                        "Context": {
+                            "CompletedChallenges": []
+                        },
+                        "ContextListeners": {
+                            "CompletedChallenges": {
+                                "comparand": "$.RequiredChallenges",
+                                "type": "challengetree"
+                            }
+                        },
+                        "States": {
+                            "Start": {
+                                "ChallengeCompleted": [
+                                    {
+                                        "Condition": {
+                                            "$any": {
+                                                "?": {
+                                                    "$eq": [
+                                                        "$.#",
+                                                        "$Value.ChallengeId"
+                                                    ]
+                                                },
+                                                "in": "$.RequiredChallenges"
+                                            }
+                                        },
+                                        "$pushunique": [
+                                            "CompletedChallenges",
+                                            "$Value.ChallengeId"
+                                        ]
+                                    },
+                                    {
+                                        "Condition": {
+                                            "$eq": [
+                                                "($.CompletedChallenges).Count",
+                                                "($.RequiredChallenges).Count"
+                                            ]
+                                        },
+                                        "Transition": "Success"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "Tags": ["vitamin-pack", "story", "hard"],
+                    "InclusionData": {
+                        "ContractIds": null,
+                        "ContractTypes": null,
+                        "Locations": [
+                            "LOCATION_COASTALTOWN",
+                            "LOCATION_COASTALTOWN_EBOLA",
+                            "LOCATION_COASTALTOWN_MOVIESET",
+                            "LOCATION_COASTALTOWN_NIGHT"
+                        ],
+                        "GameModes": null
+                    }
+                },
+                {
+                    "Id": "fc704e7b-aaa5-4449-8966-eff24cb44716",
+                    "Name": "UI_PEACOCK_CHALLENGEPACK_VITAMIN_MAMBA_CHEERLEADER_NAME",
+                    "ImageName": "images/challenges/Categories/PackVitamin/Vitamin_Mamba_Cheerleader.jpg",
+                    "Description": "UI_PEACOCK_CHALLENGEPACK_VITAMIN_MAMBA_CHEERLEADER_DESC",
+                    "Rewards": {
+                        "MasteryXP": 2000
+                    },
+                    "Drops": [],
+                    "IsPlayable": false,
+                    "IsLocked": false,
+                    "HideProgression": false,
+                    "CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_PACK_VITAMIN",
+                    "Icon": "challenge_category_feats",
+                    "LocationId": "LOCATION_COASTALTOWN_NIGHT",
+                    "ParentLocationId": "LOCATION_PARENT_COASTALTOWN",
+                    "Type": "contract",
+                    "DifficultyLevels": [],
+                    "OrderIndex": 2,
+                    "XpModifier": {},
+                    "RuntimeType": "Hit",
+                    "Definition": {
+                        "Scope": "session",
+                        "Context": {
+                            "StageCrewOutfit": false,
+                            "AbiattiOnStage": false
+                        },
+                        "States": {
+                            "Start": {
+                                "Disguise": [
+                                    {
+                                        "Condition": {
+                                            "$eq": [
+                                                "$Value",
+                                                "6f9f7786-2044-4394-98b4-f79da0341e7f"
+                                            ]
+                                        },
+                                        "Actions": {
+                                            "$set": ["StageCrewOutfit", true]
+                                        }
+                                    },
+                                    {
+                                        "Condition": {
+                                            "$not": {
+                                                "$eq": [
+                                                    "$Value",
+                                                    "6f9f7786-2044-4394-98b4-f79da0341e7f"
+                                                ]
+                                            }
+                                        },
+                                        "Actions": {
+                                            "$set": ["StageCrewOutfit", false]
+                                        }
+                                    }
+                                ],
+                                "TargetOnStage": [
+                                    {
+                                        "Condition": {
+                                            "$eq": ["$Value", true]
+                                        },
+                                        "Actions": {
+                                            "$set": ["AbiattiOnStage", true]
+                                        }
+                                    },
+                                    {
+                                        "Condition": {
+                                            "$eq": ["$Value", false]
+                                        },
+                                        "Actions": {
+                                            "$set": ["AbiattiOnStage", false]
+                                        }
+                                    }
+                                ],
+                                "setpieces": {
+                                    "Condition": {
+                                        "$and": [
+                                            {
+                                                "$eq": [
+                                                    "$.AbiattiOnStage",
+                                                    true
+                                                ]
+                                            },
+                                            {
+                                                "$eq": [
+                                                    "$.StageCrewOutfit",
+                                                    true
+                                                ]
+                                            },
+                                            {
+                                                "$eq": [
+                                                    "$Value.RepositoryId",
+                                                    "87d67118-85c7-4fa7-a842-cefc04ced27b"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            }
+                        }
+                    },
+                    "Tags": ["vitamin-pack", "story", "hard"],
+                    "InclusionData": {
+                        "ContractIds": ["00000000-0000-0000-0001-000000000005"],
+                        "ContractTypes": null,
+                        "Locations": ["LOCATION_COASTALTOWN_NIGHT"],
+                        "GameModes": null
+                    }
+                },
+                {
+                    "Id": "18ea5968-9b73-4f00-82fa-fb818f8fd4cc",
+                    "Name": "UI_PEACOCK_CHALLENGEPACK_VITAMIN_OCTOPUS_ATHLETICS_NAME",
+                    "ImageName": "images/challenges/Categories/PackVitamin/Vitamin_Octopus_Athletics.jpg",
+                    "Description": "UI_PEACOCK_CHALLENGEPACK_VITAMIN_OCTOPUS_ATHLETICS_DESC",
+                    "Rewards": {
+                        "MasteryXP": 4000
+                    },
+                    "Drops": [],
+                    "IsPlayable": false,
+                    "IsLocked": false,
+                    "HideProgression": false,
+                    "CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_PACK_VITAMIN",
+                    "Icon": "challenge_category_feats",
+                    "LocationId": "LOCATION_COASTALTOWN",
+                    "ParentLocationId": "LOCATION_PARENT_COASTALTOWN",
+                    "Type": "contract",
+                    "DifficultyLevels": [],
+                    "OrderIndex": 3,
+                    "XpModifier": {},
+                    "RuntimeType": "Hit",
+                    "Definition": {
+                        "Scope": "session",
+                        "Constants": {
+                            "Targets": [
+                                "0dfaea51-3c36-4722-9eff-f1e7ef139878",
+                                "94ab740b-b30f-4086-9aea-5c9c0de28456"
+                            ],
+                            "EligibleDisguises": [
+                                "bb1115ba-d250-4f8f-b486-f5aba8499ebb",
+                                "2a807111-ea6f-4fb3-a89d-cc6f6798fa11"
+                            ],
+                            "Goal": 2
+                        },
+                        "Context": {
+                            "TargetsPacified": [],
+                            "Count": 0
+                        },
+                        "ContextListeners": {
+                            "Count": {
+                                "type": "challengecounter",
+                                "count": "$.Count",
+                                "total": "$.Goal"
+                            }
+                        },
+                        "States": {
+                            "Start": {
+                                "Pacify": [
+                                    {
+                                        "Condition": {
+                                            "$and": [
+                                                {
+                                                    "$any": {
+                                                        "in": "$.EligibleDisguises",
+                                                        "?": {
+                                                            "$eq": [
+                                                                "$.#",
+                                                                "$Value.OutfitRepositoryId"
+                                                            ]
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "$any": {
+                                                        "in": "$.Targets",
+                                                        "?": {
+                                                            "$eq": [
+                                                                "$.#",
+                                                                "$Value.RepositoryId"
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "Actions": {
+                                            "$pushunique": [
+                                                "TargetsPacified",
+                                                "$Value.RepositoryId"
+                                            ],
+                                            "$inc": "Count"
+                                        }
+                                    },
+                                    {
+                                        "Condition": {
+                                            "$eq": ["$.Count", "$.Goal"]
+                                        },
+                                        "Transition": "Success"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "Tags": ["vitamin-pack", "story", "hard"],
+                    "InclusionData": {
+                        "ContractIds": ["00000000-0000-0000-0000-000000000600"],
+                        "ContractTypes": null,
+                        "Locations": ["LOCATION_COASTALTOWN"],
+                        "GameModes": null
+                    }
+                },
+                {
+                    "Id": "9cd14aa7-17e1-47b5-be5c-9fef35ee49a2",
+                    "Name": "UI_PEACOCK_CHALLENGEPACK_VITAMIN_EBOLA_SPEEDING_NAME",
+                    "ImageName": "images/challenges/Categories/PackVitamin/Vitamin_Ebola_Speeding.jpg",
+                    "Description": "UI_PEACOCK_CHALLENGEPACK_VITAMIN_EBOLA_SPEEDING_DESC",
+                    "Rewards": {
+                        "MasteryXP": 1000
+                    },
+                    "Drops": [],
+                    "IsPlayable": false,
+                    "IsLocked": false,
+                    "HideProgression": false,
+                    "CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_PACK_VITAMIN",
+                    "Icon": "challenge_category_feats",
+                    "LocationId": "LOCATION_COASTALTOWN_EBOLA",
+                    "ParentLocationId": "LOCATION_PARENT_COASTALTOWN",
+                    "Type": "contract",
+                    "DifficultyLevels": [],
+                    "OrderIndex": 4,
+                    "XpModifier": {},
+                    "RuntimeType": "Hit",
+                    "Definition": {
+                        "Scope": "session",
+                        "Context": {},
+                        "States": {
+                            "Start": {
+                                "IntroCutEnd": { "Transition": "Countdown" }
+                            },
+                            "Countdown": {
+                                "$timer": {
+                                    "Condition": {
+                                        "$after": 60
+                                    },
+                                    "Transition": "Failure"
+                                },
+                                "setpieces": {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "ba243047-12d9-4bcc-bcb2-2346fc63a327"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            }
+                        }
+                    },
+                    "Tags": ["vitamin-pack", "story", "hard"],
+                    "InclusionData": {
+                        "ContractIds": ["7e3f758a-2435-42de-93bd-d8f0b72c63a4"],
+                        "ContractTypes": null,
+                        "Locations": ["LOCATION_COASTALTOWN_EBOLA"],
+                        "GameModes": null
+                    }
+                },
+                {
+                    "Id": "bf37fe2b-8eb1-4f96-ae53-3ba048b5b4f3",
+                    "Name": "UI_PEACOCK_CHALLENGEPACK_VITAMIN_COPPERHEAD_FAILSANDWINS_NAME",
+                    "ImageName": "images/challenges/Categories/PackVitamin/Vitamin_Copperhead_FailsandWins.jpg",
+                    "Description": "UI_PEACOCK_CHALLENGEPACK_VITAMIN_COPPERHEAD_FAILSANDWINS_DESC",
+                    "Rewards": {
+                        "MasteryXP": 2000
+                    },
+                    "Drops": [],
+                    "IsPlayable": false,
+                    "IsLocked": false,
+                    "HideProgression": false,
+                    "CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_PACK_VITAMIN",
+                    "Icon": "challenge_category_feats",
+                    "LocationId": "LOCATION_COASTALTOWN_MOVIESET",
+                    "ParentLocationId": "LOCATION_PARENT_COASTALTOWN",
+                    "Type": "contract",
+                    "DifficultyLevels": [],
+                    "OrderIndex": 5,
+                    "XpModifier": {},
+                    "RuntimeType": "Hit",
+                    "Definition": {
+                        "Scope": "session",
+                        "Context": {},
+                        "States": {
+                            "Start": {
+                                "TurnOffGenerator": {
+                                    "Transition": "AwaitSlippery"
+                                }
+                            },
+                            "AwaitSlippery": {
+                                "Pacify": {
+                                    "Condition": {
+                                        "$and": [
+                                            {
+                                                "$eq": [
+                                                    "$Value.RepositoryId",
+                                                    "9c81b545-a234-46c5-9296-54f9f2a0bb6d"
+                                                ]
+                                            },
+                                            {
+                                                "$eq": [
+                                                    "$Value.SetPieceId",
+                                                    "62c0f1aa-41ba-45c0-800d-b6c34b98a544"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            }
+                        }
+                    },
+                    "Tags": ["vitamin-pack", "story", "hard"],
+                    "InclusionData": {
+                        "ContractIds": ["00000000-0000-0000-0001-000000000006"],
+                        "ContractTypes": null,
+                        "Locations": ["LOCATION_COASTALTOWN_MOVIESET"],
+                        "GameModes": null
+                    }
+                }
+            ]
         }
     ]
 }

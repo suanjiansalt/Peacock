@@ -1,0 +1,104 @@
+{
+    "meta": {
+        "Location": "GLOBAL_VITAMIN_CHALLENGES",
+        "GameVersions": ["h3"]
+    },
+    "groups": [
+        {
+            "Name": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_PACK_VITAMIN",
+            "Image": "images/challenges/categories/packvitamin/tile.jpg",
+            "Icon": "challenge_category_feats",
+            "CategoryId": "vitamin-pack",
+            "Description": "",
+            "OrderIndex": 6.993,
+            "Challenges": [
+                {
+                    "Id": "a97b03fe-6eed-416b-8f37-c08a770ae11e",
+                    "Name": "UI_PEACOCK_CHALLENGEPACK_VITAMIN_WRAPPER_NAME",
+                    "ImageName": "images/challenges/Categories/PackVitamin/Vitamin_Wrapper.jpg",
+                    "Description": "UI_PEACOCK_CHALLENGEPACK_VITAMIN_WRAPPER_DESC",
+                    "Rewards": {
+                        "MasteryXP": 4000
+                    },
+                    "Drops": ["PROP_MELEE_BASEBALLBAT_PURPLE"],
+                    "IsPlayable": false,
+                    "IsLocked": false,
+                    "HideProgression": false,
+                    "CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_PACK_VITAMIN",
+                    "Icon": "challenge_category_feats",
+                    "LocationId": "",
+                    "ParentLocationId": "",
+                    "Type": "global",
+                    "DifficultyLevels": [],
+                    "OrderIndex": 1,
+                    "XpModifier": {},
+                    "RuntimeType": "Hit",
+                    "Definition": {
+                        "Scope": "profile",
+                        "Constants": {
+                            "RequiredChallenges": [
+                                "18ea5968-9b73-4f00-82fa-fb818f8fd4cc",
+                                "fc704e7b-aaa5-4449-8966-eff24cb44716",
+                                "bf37fe2b-8eb1-4f96-ae53-3ba048b5b4f3",
+                                "9cd14aa7-17e1-47b5-be5c-9fef35ee49a2"
+                            ]
+                        },
+                        "Context": {
+                            "CompletedChallenges": []
+                        },
+                        "ContextListeners": {
+                            "CompletedChallenges": {
+                                "comparand": "$.RequiredChallenges",
+                                "type": "challengetree"
+                            }
+                        },
+                        "States": {
+                            "Start": {
+                                "ChallengeCompleted": [
+                                    {
+                                        "Condition": {
+                                            "$any": {
+                                                "?": {
+                                                    "$eq": [
+                                                        "$.#",
+                                                        "$Value.ChallengeId"
+                                                    ]
+                                                },
+                                                "in": "$.RequiredChallenges"
+                                            }
+                                        },
+                                        "$pushunique": [
+                                            "CompletedChallenges",
+                                            "$Value.ChallengeId"
+                                        ]
+                                    },
+                                    {
+                                        "Condition": {
+                                            "$eq": [
+                                                "($.CompletedChallenges).Count",
+                                                "($.RequiredChallenges).Count"
+                                            ]
+                                        },
+                                        "Transition": "Success"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "Tags": ["vitamin-pack", "story", "hard"],
+                    "InclusionData": {
+                        "ContractIds": null,
+                        "ContractTypes": null,
+                        "Locations": [
+                            "LOCATION_COASTALTOWN",
+                            "LOCATION_COASTALTOWN_EBOLA",
+                            "LOCATION_COASTALTOWN_MOVIESET",
+                            "LOCATION_COASTALTOWN_NIGHT"
+                        ],
+                        "GameModes": null
+                    }
+                }
+            ]
+        }
+    ]
+}
