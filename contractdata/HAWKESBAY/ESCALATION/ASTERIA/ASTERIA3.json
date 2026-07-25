@@ -8,7 +8,7 @@
                 "Type": "statemachine",
                 "ObjectiveType": "kill",
                 "HUDTemplate": {
-                    "display": "$loc UI_PEACOCK_YULANIA_CAPTAIN"
+                    "display": "$loc UI_PEACOCK_ASTERIA_CAPTAIN"
                 },
                 "TargetConditions": [
                     {
@@ -76,7 +76,7 @@
                 "Type": "statemachine",
                 "ObjectiveType": "kill",
                 "HUDTemplate": {
-                    "display": "$loc UI_PEACOCK_YULANIA_TAR1"
+                    "display": "$loc UI_PEACOCK_ASTERIA_OBJ1"
                 },
                 "TargetConditions": [
                     {
@@ -144,7 +144,7 @@
                 "Type": "statemachine",
                 "ObjectiveType": "kill",
                 "HUDTemplate": {
-                    "display": "$loc UI_PEACOCK_YULANIA_TAR2"
+                    "display": "$loc UI_PEACOCK_ASTERIA_OBJ2"
                 },
                 "TargetConditions": [
                     {
@@ -212,7 +212,7 @@
                 "Type": "statemachine",
                 "ObjectiveType": "kill",
                 "HUDTemplate": {
-                    "display": "$loc UI_PEACOCK_YULANIA_TAR3"
+                    "display": "$loc UI_PEACOCK_ASTERIA_OBJ3"
                 },
                 "TargetConditions": [
                     {
@@ -280,7 +280,7 @@
                 "Type": "statemachine",
                 "ObjectiveType": "kill",
                 "HUDTemplate": {
-                    "display": "$loc UI_PEACOCK_YULANIA_TAR4"
+                    "display": "$loc UI_PEACOCK_ASTERIA_OBJ4"
                 },
                 "TargetConditions": [
                     {
@@ -380,7 +380,7 @@
         ]
     },
     "Metadata": {
-        "Title": "UI_PEACOCK_YULANIA3",
+        "Title": "UI_PEACOCK_ASTERIA3",
         "Description": "",
         "Entitlements": ["LOCATION_NEWZEALAND"],
         "ScenePath": "assembly:/_pro/scenes/missions/sheep/scene_sheep.entity",
@@ -390,7 +390,7 @@
         "Type": "escalation",
         "Id": "21232f29-296f-555a-b642-c99bf068506e",
         "PublicId": "165627655427",
-        "TileImage": "images/contracts/escalation/contractescalation_yulania.jpg",
+        "TileImage": "images/contracts/escalation/contractescalation_asteria.jpg",
         "InGroup": "e1e86206-d3f0-a819-e477-3d80e55e8a40",
         "GroupObjectiveDisplayOrder": [
             {

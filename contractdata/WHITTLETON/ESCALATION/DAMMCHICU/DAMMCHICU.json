@@ -20,7 +20,7 @@
     },
     "Metadata": {
         "Title": "UI_PEACOCK_THORNBUSH",
-        "Description": "UI_PEACOCK_ESCALATION_WHITTLETON_DESC",
+        "Description": "UI_PEACOCK_ESCALATION_WHITTLETONCREEK_DESC",
         "Id": "218302a3-f682-46f9-9ffd-bb3e82487b7c",
         "Type": "escalation",
         "Entitlements": ["LOCATION_NORTHAMERICA"],

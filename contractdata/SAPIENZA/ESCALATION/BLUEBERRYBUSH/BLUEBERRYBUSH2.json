@@ -7,9 +7,9 @@
                 "_comment": "----- Kill Rocco's Sister -----",
                 "Type": "statemachine",
                 "Id": "3846c991-edda-4b66-8d0f-d2a702b20fcf",
-                "BriefingText": "$loc UI_PEACOCK_BLUEBERRYBUSH_OBJ1_CONDITION",
+                "BriefingText": "$loc UI_PEACOCK_BLUEBERRYBUSH_OBJ1_ACCIDENT",
                 "HUDTemplate": {
-                    "display": "$loc UI_PEACOCK_BLUEBERRYBUSH_OBJ1_CONDITION"
+                    "display": "$loc UI_PEACOCK_BLUEBERRYBUSH_OBJ1_ACCIDENT"
                 },
                 "Category": "primary",
                 "Definition": {
@@ -72,9 +72,9 @@
                 "_comment": "----- Kill the Right Guard -----",
                 "Type": "statemachine",
                 "Id": "28275372-d543-49ba-a799-97b9ca4b4cdf",
-                "BriefingText": "$loc UI_PEACOCK_BLUEBERRYBUSH_OBJ2_CONDITION",
+                "BriefingText": "$loc UI_PEACOCK_BLUEBERRYBUSH_OBJ2_ACCIDENT",
                 "HUDTemplate": {
-                    "display": "$loc UI_PEACOCK_BLUEBERRYBUSH_OBJ2_CONDITION"
+                    "display": "$loc UI_PEACOCK_BLUEBERRYBUSH_OBJ2_ACCIDENT"
                 },
                 "Category": "primary",
                 "Definition": {

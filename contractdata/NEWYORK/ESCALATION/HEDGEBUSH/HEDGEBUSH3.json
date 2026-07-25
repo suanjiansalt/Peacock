@@ -6,9 +6,9 @@
                 "_comment": "----- Kill Frank -----",
                 "Type": "statemachine",
                 "Id": "0ac94c6b-05a0-444f-b999-ba378564c0c1",
-                "BriefingText": "$loc UI_PEACOCK_HEDGEBUSH_OBJ1_CONDITION",
+                "BriefingText": "$loc UI_PEACOCK_HEDGEBUSH_OBJ1_CHEESEBURGER",
                 "HUDTemplate": {
-                    "display": "$loc UI_PEACOCK_HEDGEBUSH_OBJ1_CONDITION"
+                    "display": "$loc UI_PEACOCK_HEDGEBUSH_OBJ1_CHEESEBURGER"
                 },
                 "Category": "primary",
                 "Definition": {
@@ -97,9 +97,9 @@
                 "_comment": "----- Kill Gourd -----",
                 "Type": "statemachine",
                 "Id": "c0ce83d5-bdc1-4f2e-bac4-397bfc7504e5",
-                "BriefingText": "$loc UI_PEACOCK_HEDGEBUSH_OBJ2_CONDITION",
+                "BriefingText": "$loc UI_PEACOCK_HEDGEBUSH_OBJ2_CHEESEBURGER",
                 "HUDTemplate": {
-                    "display": "$loc UI_PEACOCK_HEDGEBUSH_OBJ2_CONDITION"
+                    "display": "$loc UI_PEACOCK_HEDGEBUSH_OBJ2_CHEESEBURGER"
                 },
                 "Category": "primary",
                 "Definition": {

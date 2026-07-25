@@ -97,7 +97,7 @@
                     }
                 },
                 "HUDTemplate": {
-                    "display": "$loc UI_PEACOCK_KHAKIASP_DOCUMENTATION_OBJ1_CONDITION"
+                    "display": "$loc UI_PEACOCK_KHAKIASP_DOCUMENTATION_OBJ1_BEAKSTAFF"
                 },
                 "Category": "primary",
                 "Definition": {
@@ -158,7 +158,7 @@
                     }
                 },
                 "HUDTemplate": {
-                    "display": "$loc UI_PEACOCK_KHAKIASP_DOCUMENTATION_OBJ2_CONDITION"
+                    "display": "$loc UI_PEACOCK_KHAKIASP_DOCUMENTATION_OBJ2_BEAKSTAFF"
                 },
                 "Category": "primary",
                 "Definition": {
@@ -219,7 +219,7 @@
                     }
                 },
                 "HUDTemplate": {
-                    "display": "$loc UI_PEACOCK_KHAKIASP_DOCUMENTATION_OBJ3_CONDITION"
+                    "display": "$loc UI_PEACOCK_KHAKIASP_DOCUMENTATION_OBJ3_BEAKSTAFF"
                 },
                 "Category": "primary",
                 "Definition": {
