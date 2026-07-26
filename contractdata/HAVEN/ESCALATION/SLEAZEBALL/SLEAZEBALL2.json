@@ -214,6 +214,14 @@
         "Bricks": [],
         "VR": [
             {
+                "Quality": "ps4_vr1",
+                "Bricks": [
+                    "assembly:/_pro/Scenes/Bricks/vr_setup.brick",
+                    "assembly:/_pro/scenes/missions/opulent/mission_stingray/vr_overrides_stingray_ps4_vr1.brick",
+                    "assembly:/_pro/scenes/missions/opulent/mission_stingray/vr_overrides_low_performance.brick"
+                ]
+            },
+            {
                 "Quality": "base",
                 "Bricks": [
                     "assembly:/_pro/Scenes/Bricks/vr_setup.brick",
@@ -243,13 +251,8 @@
         "InGroup": "35f1f534-ae2d-42be-8472-dd55e96625ea",
         "TileImage": "images/contracts/escalation/contractescalation_longbush.jpg",
         "GroupObjectiveDisplayOrder": [
-            {
-                "Id": "74c86d8a-3a1d-4c76-a7a4-fa9805b0bae8",
-                "IsNew": true
-            },
-            {
-                "Id": "26009bfe-b1d2-4533-9d8c-a2362b8ff4a5"
-            }
+            { "Id": "74c86d8a-3a1d-4c76-a7a4-fa9805b0bae8", "IsNew": true },
+            { "Id": "26009bfe-b1d2-4533-9d8c-a2362b8ff4a5" }
         ]
     },
     "UserData": {}

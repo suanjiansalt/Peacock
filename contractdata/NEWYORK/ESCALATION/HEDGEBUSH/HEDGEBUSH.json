@@ -2,6 +2,14 @@
     "Data": {
         "VR": [
             {
+                "Quality": "ps4_vr1",
+                "Bricks": [
+                    "assembly:/_pro/Scenes/Bricks/vr_setup.brick",
+                    "assembly:/_pro/scenes/missions/Greedy/mission_raccoon/vr_overrides_raccoon_ps4_vr1.brick",
+                    "assembly:/_pro/scenes/missions/greedy/mission_raccoon/vr_overrides_low_performance.brick"
+                ]
+            },
+            {
                 "Quality": "base",
                 "Bricks": [
                     "assembly:/_pro/Scenes/Bricks/vr_setup.brick",

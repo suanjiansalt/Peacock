@@ -85,6 +85,14 @@
         "Bricks": [],
         "VR": [
             {
+                "Quality": "ps4_vr1",
+                "Bricks": [
+                    "assembly:/_pro/Scenes/Bricks/vr_setup.brick",
+                    "assembly:/_pro/scenes/missions/opulent/mission_stingray/vr_overrides_stingray_ps4_vr1.brick",
+                    "assembly:/_pro/scenes/missions/opulent/mission_stingray/vr_overrides_low_performance.brick"
+                ]
+            },
+            {
                 "Quality": "base",
                 "Bricks": [
                     "assembly:/_pro/Scenes/Bricks/vr_setup.brick",
@@ -114,15 +122,9 @@
         "InGroup": "f19f7ac8-39ec-498b-aa23-44c8e75d8693",
         "TileImage": "images/contracts/escalation/contractescalation_pirates_problem.jpg",
         "GroupObjectiveDisplayOrder": [
-            {
-                "Id": "26009bfe-b1d2-4533-9d8c-a2362b8ff4a5"
-            },
-            {
-                "Id": "843fa79f-6127-4911-b1c0-5edff6133b6f"
-            },
-            {
-                "Id": "8618ebaa-f42b-42ce-be20-00d2b0a04897"
-            }
+            { "Id": "26009bfe-b1d2-4533-9d8c-a2362b8ff4a5" },
+            { "Id": "843fa79f-6127-4911-b1c0-5edff6133b6f" },
+            { "Id": "8618ebaa-f42b-42ce-be20-00d2b0a04897" }
         ]
     },
     "UserData": {}

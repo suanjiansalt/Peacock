@@ -185,16 +185,9 @@
         "InGroup": "0cceeecb-c8fe-42a4-aee4-d7b575f56a1b",
         "TileImage": "images/contracts/escalation/contractescalation_satanta.jpg",
         "GroupObjectiveDisplayOrder": [
-            {
-                "Id": "542a7e07-a948-49d2-b4ed-52b8f0f1927f",
-                "IsNew": true
-            },
-            {
-                "Id": "7a3650bb-68fd-4916-ae4d-40ed06990f70"
-            },
-            {
-                "Id": "6c64e36d-68b7-4ec3-9ac2-04d7bef865a7"
-            }
+            { "Id": "542a7e07-a948-49d2-b4ed-52b8f0f1927f", "IsNew": true },
+            { "Id": "7a3650bb-68fd-4916-ae4d-40ed06990f70" },
+            { "Id": "6c64e36d-68b7-4ec3-9ac2-04d7bef865a7" }
         ]
     }
 }

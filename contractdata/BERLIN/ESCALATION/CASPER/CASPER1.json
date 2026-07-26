@@ -5,6 +5,14 @@
         ],
         "VR": [
             {
+                "Quality": "ps4_vr1",
+                "Bricks": [
+                    "assembly:/_pro/Scenes/Bricks/vr_setup.brick",
+                    "assembly:/_pro/scenes/missions/edgy/mission_fox/vr_overrides_fox_ps4_vr1.brick",
+                    "assembly:/_pro/scenes/missions/edgy/mission_fox/vr_overrides_low_performance.brick"
+                ]
+            },
+            {
                 "Quality": "base",
                 "Bricks": [
                     "assembly:/_pro/Scenes/Bricks/vr_setup.brick",
@@ -162,15 +170,9 @@
         "Type": "escalation",
         "InGroup": "5bc6a2a3-d80a-4cb3-9ebc-a93d9238950d",
         "GroupObjectiveDisplayOrder": [
-            {
-                "Id": "a18b6e68-7824-4f01-a734-eea0da185137"
-            },
-            {
-                "Id": "3c5d897e-0a77-41f1-aa24-23635f4b1b97"
-            },
-            {
-                "Id": "d24f6b72-fafe-4257-a9fd-67a939c32cef"
-            }
+            { "Id": "a18b6e68-7824-4f01-a734-eea0da185137" },
+            { "Id": "3c5d897e-0a77-41f1-aa24-23635f4b1b97" },
+            { "Id": "d24f6b72-fafe-4257-a9fd-67a939c32cef" }
         ],
         "Entitlements": ["LOCATION_EDGY"],
         "LastUpdate": "2023-03-30T11:20:27.0914255Z",

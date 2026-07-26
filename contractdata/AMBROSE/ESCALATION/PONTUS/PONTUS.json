@@ -7,6 +7,14 @@
         "GameChangerReferences": [],
         "VR": [
             {
+                "Quality": "ps4_vr1",
+                "Bricks": [
+                    "assembly:/_pro/Scenes/Bricks/vr_setup.brick",
+                    "assembly:/_PRO/scenes/missions/rocky/vr_overrides_dugong_ps4_vr1.brick",
+                    "assembly:/_PRO/scenes/missions/rocky/vr_overrides_low_performance.brick"
+                ]
+            },
+            {
                 "Quality": "base",
                 "Bricks": [
                     "assembly:/_pro/Scenes/Bricks/vr_setup.brick",

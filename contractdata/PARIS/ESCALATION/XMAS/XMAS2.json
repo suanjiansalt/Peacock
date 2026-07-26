@@ -306,6 +306,16 @@
         "EnableSaving": false,
         "VR": [
             {
+                "Quality": "ps4_vr1",
+                "Bricks": [
+                    "assembly:/_pro/Scenes/Bricks/vr_setup.brick",
+                    "assembly:/_pro/scenes/missions/paris/vr_overrides_peacock_ps4_vr1.brick",
+                    "assembly:/_pro/scenes/missions/paris/vr_agility_overrides_peacock_ps4_vr1.brick",
+                    "assembly:/_pro/scenes/missions/paris/vr_overrides_low_performance.brick",
+                    "assembly:/_pro/scenes/missions/paris/vr_overrides_not_peacock_ps4_vr1.brick"
+                ]
+            },
+            {
                 "Quality": "base",
                 "Bricks": [
                     "assembly:/_pro/Scenes/Bricks/vr_setup.brick",
@@ -333,13 +343,8 @@
         "Id": "6fa8267b-730f-48c7-ae62-f7155eb62340",
         "ScenePath": "assembly:/_PRO/Scenes/Missions/Paris/_scene_paris.entity",
         "GroupObjectiveDisplayOrder": [
-            {
-                "IsNew": true,
-                "Id": "c4b808ea-607c-484a-a6a1-9ba8bfb038ec"
-            },
-            {
-                "Id": "e3368651-38e4-4e0c-91a0-95d76078b09f"
-            }
+            { "Id": "c4b808ea-607c-484a-a6a1-9ba8bfb038ec", "IsNew": true },
+            { "Id": "e3368651-38e4-4e0c-91a0-95d76078b09f" }
         ],
         "Location": "LOCATION_PARIS_NOEL",
         "InGroup": "07bbf22b-d6ae-4883-bec2-122eeeb7b665",

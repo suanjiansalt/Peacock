@@ -5,6 +5,14 @@
         "Bricks": [],
         "VR": [
             {
+                "Quality": "ps4_vr1",
+                "Bricks": [
+                    "assembly:/_pro/Scenes/Bricks/vr_setup.brick",
+                    "assembly:/_pro/scenes/missions/sheep/vr_overrides_sheep_2_ps4_vr1.brick",
+                    "assembly:/_pro/scenes/missions/sheep/vr_overrides_sheep_ps4_vr1.brick"
+                ]
+            },
+            {
                 "Quality": "base",
                 "Bricks": [
                     "assembly:/_pro/Scenes/Bricks/vr_setup.brick",

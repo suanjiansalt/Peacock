@@ -143,6 +143,14 @@
         "EnableSaving": false,
         "VR": [
             {
+                "Quality": "ps4_vr1",
+                "Bricks": [
+                    "assembly:/_pro/Scenes/Bricks/vr_setup.brick",
+                    "assembly:/_pro/scenes/missions/elegant/vr_overrides_llama_ps4_vr1.brick",
+                    "assembly:/_pro/scenes/missions/elegant/vr_overrides_low_performance.brick"
+                ]
+            },
+            {
                 "Quality": "base",
                 "Bricks": [
                     "assembly:/_pro/Scenes/Bricks/vr_setup.brick",
@@ -171,19 +179,10 @@
         "Location": "LOCATION_ELEGANT_LLAMA",
         "TileImage": "images/contracts/escalation/contractescalation_grapebush.jpg",
         "GroupObjectiveDisplayOrder": [
-            {
-                "Id": "acbe897b-5957-4ae7-ae68-a9ae9a0c6779",
-                "IsNew": true
-            },
-            {
-                "Id": "fe4be56b-82e6-444a-ae9e-408e92b65380"
-            },
-            {
-                "Id": "122428ab-7075-4842-b54c-757c221723ef"
-            },
-            {
-                "Id": "8d606509-7d54-4dac-8142-a4349fd6279d"
-            }
+            { "Id": "acbe897b-5957-4ae7-ae68-a9ae9a0c6779", "IsNew": true },
+            { "Id": "fe4be56b-82e6-444a-ae9e-408e92b65380" },
+            { "Id": "122428ab-7075-4842-b54c-757c221723ef" },
+            { "Id": "8d606509-7d54-4dac-8142-a4349fd6279d" }
         ]
     }
 }

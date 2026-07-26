@@ -370,6 +370,14 @@
         "EnableSaving": false,
         "VR": [
             {
+                "Quality": "ps4_vr1",
+                "Bricks": [
+                    "assembly:/_pro/Scenes/Bricks/vr_setup.brick",
+                    "assembly:/_pro/scenes/missions/sheep/vr_overrides_sheep_2_ps4_vr1.brick",
+                    "assembly:/_pro/scenes/missions/sheep/vr_overrides_sheep_ps4_vr1.brick"
+                ]
+            },
+            {
                 "Quality": "base",
                 "Bricks": [
                     "assembly:/_pro/Scenes/Bricks/vr_setup.brick",
@@ -392,31 +400,13 @@
         "TileImage": "images/contracts/escalation/contractescalation_asteria.jpg",
         "InGroup": "e1e86206-d3f0-a819-e477-3d80e55e8a40",
         "GroupObjectiveDisplayOrder": [
-            {
-                "Id": "663b1363-0335-25d5-f02f-91a52c1a125d",
-                "IsNew": true
-            },
-            {
-                "Id": "4e050a96-a53e-0997-c1b8-1633009d631a",
-                "IsNew": true
-            },
-            {
-                "Id": "d8578edf-8e56-8afc-4f8e-88bc9b7d659a",
-                "IsNew": true
-            },
-            {
-                "Id": "2599eb20-d012-f7fe-65c5-c42b0a2df6d8",
-                "IsNew": true
-            },
-            {
-                "Id": "5746a594-6f00-0b80-3e02-7397624515d4"
-            },
-            {
-                "Id": "5e2a1492-a099-c696-529e-1e56171e352d"
-            },
-            {
-                "Id": "3db72bb5-63d6-47fe-9332-d7ea3c195e06"
-            }
+            { "Id": "663b1363-0335-25d5-f02f-91a52c1a125d", "IsNew": true },
+            { "Id": "4e050a96-a53e-0997-c1b8-1633009d631a", "IsNew": true },
+            { "Id": "d8578edf-8e56-8afc-4f8e-88bc9b7d659a", "IsNew": true },
+            { "Id": "2599eb20-d012-f7fe-65c5-c42b0a2df6d8", "IsNew": true },
+            { "Id": "5746a594-6f00-0b80-3e02-7397624515d4" },
+            { "Id": "5e2a1492-a099-c696-529e-1e56171e352d" },
+            { "Id": "3db72bb5-63d6-47fe-9332-d7ea3c195e06" }
         ],
         "CreationTimestamp": "2024-03-13T15:32:25.692Z"
     },
