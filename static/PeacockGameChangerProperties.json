@@ -2,7 +2,7 @@
     "7138fd16-4d15-4cca-816b-958e2f3a8164": {
         "Name": "UI_PEACOCK_GAMECHANGERS_ELEGANT_YANNINI_YEARNING_WHEREAMI_NAME",
         "Description": "UI_PEACOCK_GAMECHANGERS_ELEGANT_YANNINI_YEARNING_WHEREAMI_DESC",
-        "TileImage": "images/contracts/escalation/contractescalation_yannini_yearning_whereami.jpg",
+        "TileImage": "images/contracts/gamechangers/gamechanger_elegant_yannini_yearning_whereami.jpg",
         "Icon": "images/challenges/default_challenge_icon.png",
         "ObjectivesCategory": "primary",
         "IsHidden": null,
@@ -12,7 +12,7 @@
     "6a628ec5-a1d7-4a7e-9b25-b66e740ea6a6": {
         "Name": "UI_PEACOCK_GAMECHANGERS_ELEGANT_YANNINI_YEARNING_NO_WAITER_NAME",
         "Description": "UI_PEACOCK_GAMECHANGERS_ELEGANT_YANNINI_YEARNING_NO_WAITER_DESC",
-        "TileImage": "images/contracts/escalation/contractescalation_yannini_yearning_colorblossom.jpg",
+        "TileImage": "images/contracts/gamechangers/gamechanger_elegant_yannini_yearning_colorblossom.jpg",
         "Icon": "images/challenges/default_challenge_icon.png",
         "ObjectivesCategory": "primary",
         "IsHidden": null,
